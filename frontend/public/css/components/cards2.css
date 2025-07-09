@@ -1,0 +1,149 @@
+.header {
+    align-items: center;
+    display: block;
+    margin: 4rem;
+}
+.body__backColor {
+    background-color: #B2FFDB;
+
+}
+
+.header__title {
+    
+}
+
+.description__box  {
+
+}
+
+
+.title__product {
+    
+
+}
+
+.about__product {
+
+}
+
+
+
+.card__boxGap {
+    width: 300px;       /* o el tamaño que tú quieras */
+    height: 550px;      /* o auto si quieres que se adapte al contenido */
+    overflow: hidden;
+    align-content: center;       
+    justify-content: center;    /* centra verticalmente */
+    flex-direction: column;
+    /* gap: 50px; crea espacio entre la imagen y la descripción */
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 16px; /* crea espacio entre la imagen y la descripción */
+    align-items: center;
+}
+
+.description__box2{
+  background-color: #fff;/* Cambia este color al que desees */
+  width: 180px;              /* Ancho fijo */
+  height: 100px;             /* Igual al ancho para que sea un cuadrado */
+  padding: 10px;             /* Espaciado interno opcional */
+  display: flex;
+  flex-direction: column;
+  align-items: center;        /* centra horizontalmente */
+  justify-content: center;    /* centra verticalmente */
+  text-align: center;
+  padding: 15px;
+
+}
+
+.imgCard___product2 {
+    width: 70%;
+    height: 60%;
+    object-fit: cover; /* 'cover' para llenar el contenedor sin deformar */
+    display: block;
+    align-content: center;
+}
+
+
+.title__box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  align-items: center;        /* centra horizontalmente */
+  justify-content: center;    /* centra verticalmente */
+  text-align: center;
+  gap: 25px;
+  margin-bottom: 12px;
+}
+
+.imgIcon__TypeProduct {
+  width: 40px;
+  height: 40px;
+  stroke: #8BCC59;
+  position: relative;
+  padding: 0%;
+
+}
+
+h2 {
+  font-size: 20px;
+  margin: 0;
+}
+
+.button__product {
+  background-color: #8BCC59;  /* verde natural */
+  color: white;               /* texto blanco */
+  border: none;               /* sin borde */
+  border-radius: 8px;         /* bordes redondeados */
+  padding: 10px 20px;         /* espacio interno */
+  font-size: 16px;            /* tamaño del texto */
+  cursor: pointer;            /* cambia el cursor al pasar el mouse */
+  transition: background-color 0.3s ease; /* animación suave */
+}
+
+.button__product:hover {
+  background-color: #5ca32f; /* color al pasar el mouse */
+}
+/* Descripcion */
+.product__info {
+  text-align: center;         /* Centra todo el texto */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  width: 100%;               /* O puedes fijarlo como 250px, etc. */
+}
+
+.product__name {
+  font-size: var(--fs-xs);
+  font-weight: bold;
+  margin: 0;
+}
+
+.product__discount {
+  color: #e74c3c; /* rojo o color del descuento */
+  font-weight: bold;
+  margin: 0;
+  font-size: 0.8rem;
+}
+
+.product__price {
+  font-size: 1.5rem;
+  color: #2ecc71; /* verde para precio final */
+  margin: 0;
+}
+
+.product__seller {
+  font-size: 0.6rem;
+  color: #555;
+  margin: 0;
+}
+
+.cards__container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+} 

@@ -1,0 +1,119 @@
+.header {
+    align-items: center;
+    display: block;
+    margin: 4rem;
+}
+
+.header__title {
+    
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* 🔹 Alinea horizontalmente a la izquierda */
+    text-align: left;        /* 🔹 Alinea el texto a la izquierda */
+    padding: 16px;
+    gap: 10px;     
+}
+
+.description__box  {
+
+}
+
+
+
+.title__product {
+    
+
+}
+
+.about__product {
+
+}
+
+.description__box {
+  background-color: #D2EBBF;/* Cambia este color al que desees */
+  width: 300px;              /* Ancho fijo */
+  height: 220px;             /* Igual al ancho para que sea un cuadrado */
+  padding: 10px;             /* Espaciado interno opcional */
+  display: flex;
+  flex-direction: column;
+  align-items: center;        /* centra horizontalmente */
+  justify-content: center;    /* centra verticalmente */
+  text-align: center;
+  padding: 15px;
+
+}
+
+
+.card__box {
+    width: 300px;       /* o el tamaño que tú quieras */
+    height: 550px;      /* o auto si quieres que se adapte al contenido */
+    overflow: hidden;
+    align-content: center;       
+    justify-content: center;    /* centra verticalmente */
+    flex-direction: column;
+    /* gap: 50px; crea espacio entre la imagen y la descripción */
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.imgCard___product {
+    width: 100%;
+    height: 50%;
+    object-fit: cover; /* 'cover' para llenar el contenedor sin deformar */
+    display: block;
+    align-content: center;
+}
+
+
+.title__box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  align-items: center;        /* centra horizontalmente */
+  justify-content: center;    /* centra verticalmente */
+  text-align: center;
+  gap: 25px;
+  margin-bottom: 12px;
+}
+
+.imgIcon__TypeProduct {
+  width: 40px;
+  height: 40px;
+  stroke: #8BCC59;
+  position: relative;
+  padding: 0%;
+
+}
+
+h2 {
+  font-size: 20px;
+  margin: 0;
+}
+
+.button__product {
+  background-color: #8BCC59;  /* verde natural */
+  color: white;               /* texto blanco */
+  border: none;               /* sin borde */
+  border-radius: 8px;         /* bordes redondeados */
+  padding: 10px 20px;         /* espacio interno */
+  font-size: 16px;            /* tamaño del texto */
+  cursor: pointer;            /* cambia el cursor al pasar el mouse */
+  transition: background-color 0.3s ease; /* animación suave */
+}
+
+.button__product:hover {
+  background-color: #5ca32f; /* color al pasar el mouse */
+}
+
+.cards__container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
