@@ -1,0 +1,9 @@
+.footer-container {
+    color: var(--white);
+    background-color: var(--primary-secundary-700);
+    border-radius: 30px solid var(--primary-300);
+    height: 1.9rem;
+    text-align: center;
+    padding-top: 0.5rem; 
+    
+}

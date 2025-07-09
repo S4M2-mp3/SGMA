@@ -1,31 +1,59 @@
 :root {
     /* Primary color*/
 
-    --primary-950: #4DB100;
-    --primary-900: #55B40C;
-    --primary-800: #67BC26;
-    --primary-700: #79C43F;
-    --primary-600: #8BCC59;
-    --primary-500: #9DD472;
-    --primary-400: #AEDB8C;
-    --primary-300: #C0E3A5;
-    --primary-200: #D2EBBF;
-    --primary-100: #EAF3D8;
-    --primary-50: #F6FBF2;
+    --primary-950: #00341e;
+    --primary-900: #0a5d3a;
+    --primary-800: #0a7144;
+    --primary-700: #049152;
+    --primary-600: #00c16a; /*color primario*/ 
+    --primary-500: #09de7d;
+    --primary-400: #33f59d;
+    --primary-300: #76ffc0;
+    --primary-200: #b2ffdb;
+    --primary-100: #d7ffec;
+    --primary-50: #eefff6;
+
+    /*Secound primary color*/
+
+    --primary-secundary-950: #142b3d;
+    --primary-secundary-900: #1e425c;
+    --primary-secundary-800: #1e4f6e;
+    --primary-secundary-700: #215f88; /*color primario*/ 
+    --primary-secundary-600: #2673a3; 
+    --primary-secundary-500: #3690c1;
+    --primary-secundary-400: #5baad5;
+    --primary-secundary-300: #94c7e5;
+    --primary-secundary-200: #c6e0f1;
+    --primary-secundary-100: #e6f0f8;
+    --primary-secundary-50: #f3f8fc;
 
     /* Secundary color*/
 
-    --secundary-950:#FED638;
-    --secundary-900:#FED841;
-    --secundary-800:#FEDC55;
-    --secundary-700:#FEE069;
-    --secundary-600:#FEE47D;
-    --secundary-500:#FEE891;
-    --secundary-400:#FEECA5;
-    --secundary-300:#FEF0B9;
-    --secundary-200:#FEF4CD;
-    --secundary-100:#FEF8E1;
-    --secundary-50:#FEFCF5;
+    --secundary-950: #181D16;
+    --secundary-900: #313A2D;
+    --secundary-800: #3B4536;
+    --secundary-700: #475540;
+    --secundary-600: #5B6D51; /* Secundary color */ 
+    --secundary-500: #708364;
+    --secundary-400: #90A286;
+    --secundary-300: #B7C5B0;
+    --secundary-200: #D8DFD3;
+    --secundary-100: #EBEFE9;
+    --secundary-50: #F6F8F5;
+
+     /* Tertiary color*/
+
+    --terciary-950: #12260D;
+    --terciary-900: #294621;
+    --terciary-800: #2E5222;
+    --terciary-700: #366625;
+    --terciary-600: #44852B;
+    --terciary-500: #5AA73B;
+    --terciary-400: #79C259;
+    --terciary-300: #9CD581;
+    --terciary-200: #C2E6B0;
+    --terciary-100: #E4F4DB; /* Tertiary color */
+    --tertiary-50: #F1F9EC;
 
     /* Basic color*/
     --white: #fff;
@@ -44,6 +72,8 @@
 
     /* Font-family */
     --main-font: Helvetica, Arial, sans-serif;
+    --main-poppins: ;
+    
 
     /* Font-size */
     --fs-xxxxl: 8.0rem; /* Ultra grande */

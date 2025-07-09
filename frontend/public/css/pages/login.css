@@ -1,0 +1,89 @@
+.encabezado {
+    background-color: var(--primary-500);
+    height: 3rem;
+    width: ;
+    justify-content: ;
+    background-size: cover;
+    padding-top: 0.5rem;
+    flex-direction: ;
+    
+
+    
+}
+
+.info {
+    padding-inline-start: 5rem ;
+    padding-left: 7rem;
+    padding-top: 0.4rem;
+    width: 50%;
+    height: ;
+    
+}
+
+svg {
+    padding-top: 0.2rem;
+}
+.icons{
+    text-align: right;
+    margin-top: -30px;
+    padding-inline: 2.5rem;
+    width: 92%;
+    display:block;
+}
+.img {
+    background-repeat: repeat;
+    z-index: -1;
+}
+
+.imagen{
+    background: fixed;
+}
+
+body{
+    background-color: var(--primary-secundary-700);
+    background: linear-gradient(to left, var(--primary-secundary-700) 42%, var(--white)) ;
+    /*background-image: url(/frontend/public/img/Diseño\ sin\ título\(2\).jpg); */
+    background-size: cover;
+}
+
+/* Cuerpo de la pagina */
+/*
+.cuerpo {
+    text-align: right;
+    margin-top: -30rem;
+    z-index: ;
+} 
+
+/*/
+form{
+    border-radius: 2rem0;
+    color: ;
+    
+}
+
+input{
+    border: 0.2rem solid var(--white); 
+    border-radius: 3rem;
+    width: 10rem;
+    padding: ;
+}
+
+button {
+    border: 0.3rem solid var(--primary-500);
+    border-radius: 0.3rem;
+    width: 15%;
+    height: 35px;
+    background-color: var(--primary-500);
+    color: var(--white);
+    cursor: pointer;
+    
+}
+
+
+.cuerpo {
+    padding-left: 70rem;
+    text-align: center;
+    padding-top: ;
+    margin-top: -45rem;
+    color: white;
+}
