@@ -1,0 +1,132 @@
+/* public/css/pages/home.css */
+
+.hero2-section {
+    background-image: url('/Comunidad.jpg'); /* Confirma esta ruta */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: var(--white);
+    text-align: center;
+    /* Eliminar el padding horizontal de la sección principal para que la imagen ocupe todo el ancho */
+    padding: var(--section-padding-y) 0; /* Padding vertical, pero 0 padding horizontal */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 600px;
+    position: relative;
+    font-family: var(--font-family-base);
+    width: 100%; /* Aseguramos que la sección ocupe todo el ancho disponible */
+    box-sizing: border-box; /* Importante para que el padding no cause desbordamiento */
+}
+
+/* Capa de superposición para mejorar la legibilidad del texto */
+.hero2-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+}
+
+.hero2-content {
+    position: relative;
+    z-index: 2;
+    max-width: 90%; /* Esto es el ancho máximo del *contenido* dentro del hero */
+    padding: var(--spacing-md); /* Pequeño padding interno para el contenido de texto */
+    box-sizing: border-box;
+    margin: 0 auto; /* Centra el contenido si su max-width es menor que el 100% */
+}
+
+.hero2-title {
+    font-size: var(--font-size-hero-title); /* Usamos la variable para H1 en MOBILE (48px) */
+    font-weight: var(--font-weight-bold);
+    margin-bottom: var(--spacing-md);
+    line-height: 1.2;
+}
+
+.hero2-subtitle {
+    font-size: var(--font-size-body); /* Usamos la variable para párrafo en MOBILE (16px) */
+    margin-bottom: var(--spacing-xl);
+    line-height: var(--line-height-default);
+}
+
+.hero2-buttons {
+    display: flex;
+    flex-direction: column; /* MOBILE FIRST: apila los botones por defecto */
+    width: 100%; /* Ocupa todo el ancho disponible */
+    max-width: 300px; /* Ancho máximo para los botones apilados en móvil */
+    margin: 0 auto; /* CRÍTICO: Centra el contenedor de botones */
+    gap: var(--spacing-lg); /* Espacio entre los botones */
+}
+
+/* Estilos de los botones del Hero */
+.hero2-button {
+    padding: var(--button-padding-y) var(--button-padding-x);
+    font-size: var(--font-size-button);
+    font-weight: var(--font-weight-bold);
+    border-radius: var(--spacing-xss);
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    width: 100%; /* En mobile, los botones son de ancho completo */
+}
+
+.hero2-button.primary {
+    background-color: var(--secundary-500);
+    color: var(--white);
+    border: 2px solid var(--secundary-500);
+}
+
+.hero2-button.primary:hover {
+    background-color: var(--secundary-600);
+    border-color: var(--secundary-600);
+}
+
+/* Media Queries para Responsividad - De MOBILE FIRST a DESKTOP */
+@media (min-width: 768px) {
+    .hero2-section {
+        /* Para desktop, mantenemos el 0 de padding horizontal si queremos que la imagen ocupe todo */
+        /* Si quieres un poco de padding a los lados de la imagen, podrías poner un valor pequeño aquí */
+        padding: var(--section-padding-y) 0;
+    }
+
+    .hero2-content {
+        max-width: 800px; /* Ancho máximo para el contenido de texto en desktop */
+        padding: 0 var(--spacing-xl); /* Añadir padding a los lados del contenido en desktop si es necesario */
+        margin: 0 auto; /* Mantener centrado */
+    }
+
+    .hero2-title {
+        font-size: var(--font-size-h1); /* Título grande para desktop (60px) */
+    }
+
+    .hero2-subtitle {
+        font-size: var(--font-size-p-welcome); /* Párrafo más grande para desktop (18px) */
+    }
+
+    .hero2-buttons {
+        flex-direction: row; /* En desktop, los botones van en fila */
+        width: auto; /* Permite que los botones se ajusten a su contenido */
+        max-width: none;
+        justify-content: center; /* CRÍTICO: Centra los botones dentro de su contenedor flex en desktop */
+    }
+
+    .hero2-button {
+        width: auto; /* En desktop, el ancho se ajusta al contenido + padding */
+        min-width: 150px;
+    }
+}
+/* Opcional: Para pantallas aún más grandes (ej. 1200px o más) */
+@media (min-width: 1200px) {
+    .hero2-content {
+        max-width: 900px; /* O un valor que te guste para pantallas muy grandes */
+    }
+}

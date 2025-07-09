@@ -1,0 +1,52 @@
+<!--
+León Sebastián Ruiz Pulgarín
+
+Formulario
+-->
+
+<section class="contact-section" id="contacto">
+
+    <!-- Todo este bloque de código es un formulario que usa multiples clases creadas-->
+    <div class="contact-container">
+        <h2 class="contact-title">Contáctanos</h2>
+        <p class="contact-subtitle">Déjanos tus datos, nosotros te contactaremos</p>
+        <div class="contact-content">
+            <form class="contact-form" id="formularioContacto">
+                <div class="form-group">
+                    <label for="nombre" class="sr-only">Nombre</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Nombre" class="form-input" required>
+                </div>
+                <div class="form-group-inline">
+                    <div class="form-group">
+                        <label for="correo" class="sr-only">Correo electrónico</label>
+                        <input type="email" id="correo" name="correo" placeholder="Correo electrónico" class="form-input" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="telefono" class="sr-only">Teléfono</label>
+                        <input type="tel" id="telefono" name="telefono" placeholder="Teléfono" class="form-input">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="mensaje" class="sr-only">Mensaje</label>
+                    <textarea id="mensaje" name="mensaje" rows="5" placeholder="Mensaje" class="form-input textarea" required></textarea>
+                </div>
+                <button type="submit" class="submit-button">Enviar</button>
+            </form>
+
+            <!-- Este bloque es un mapa de google maps con las respectivas dimensiones-->
+            <div class="map-container">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12345.67890!2d-75.00000!3d5.00000!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e38f98c0d9a6c2f%3A0x1234567890abcdef!2sCDTI%20SENA%20Dosquebradas!5e0!3m2!1ses!2sco!4v1678901234567!5m2!1ses!2sco"
+                    width="600"
+                    height="450"
+                    style="border:0;"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+            
+            </div>
+        </div>
+    </div>
+</section>

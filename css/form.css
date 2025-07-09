@@ -1,0 +1,213 @@
+/* form.css */
+
+@import '/CSS/variables.css'; /* Make sure the path is correct relative to form.css */
+
+/* Base styles for the section */
+
+.contact-section {
+    padding: var(--spacing-xl) var(--spacing-lg); /* Ajustado ligeramente el padding horizontal para mobile */
+    text-align: center;
+    background-color: var(--white);
+    font-family: var(--font-family-base);
+    color: var(--gray-900);
+}
+
+.contact-container {
+    max-width: 1200px; /* Max width for content */
+    margin: 0 auto; /* Center the container */
+}
+
+/* Heading styles */
+.contact-title {
+    /* Observación: Contáctanos es de 38px */
+    font-size: 38px; /* Ajuste directo a 38px */
+    color: var(--primary-800);
+    margin-bottom: var(--spacing-xs);
+    font-weight: var(--font-weight-bold);
+}
+
+.contact-subtitle {
+    /* Observación: Dejanos tus datos ... es de 14px */
+    font-size: 14px; /* Ajuste directo a 14px */
+    color: var(--gray-700);
+    margin-bottom: var(--spacing-xl);
+}
+
+/* Content layout for form and map */
+.contact-content {
+    display: flex;
+    flex-direction: column; /* Stack vertically on mobile */
+    gap: var(--spacing-xl);
+    align-items: center; /* Centra los ítems horizontalmente cuando están apilados */
+}
+
+/* Form specific styles */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md); /* Espacio entre los grupos de formulario */
+    width: 100%;
+    max-width: 450px; /* Limita el ancho del formulario en mobile */
+}
+
+.form-group {
+    width: 100%;
+}
+
+.form-group-inline {
+    display: flex;
+    flex-direction: column; /* Stack inputs on mobile */
+    gap: var(--spacing-md); /* Espacio entre los inputs "inline" en mobile */
+    width: 100%;
+}
+
+.form-group-inline .form-group {
+    flex: 1;
+}
+
+/* Input and textarea styles */
+.form-input {
+    width: 100%;
+    padding: var(--spacing-md);
+    border: 1px solid var(--primary-200);
+    border-radius: var(--spacing-xss);
+    background-color: var(--primary-50);
+    color: var(--gray-900);
+    /* Observación: El texto de las celdas de formulario es de 15px */
+    font-size: 15px; /* Ajuste directo a 15px */
+    font-family: var(--font-family-base);
+    box-sizing: border-box;
+}
+
+.form-input::placeholder {
+    color: var(--gray-500);
+}
+
+.form-input:focus {
+    outline: none;
+    border-color: var(--primary-500);
+    box-shadow: 0 0 0 2px rgba(54, 144, 193, 0.2);
+}
+
+.form-input.textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+/* Visually hidden labels for accessibility */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
+
+/* Button styles */
+.submit-button {
+    padding: var(--spacing-md) var(--spacing-xl); /* Ajuste el padding para un tamaño más adecuado */
+    background-color: var(--secundary-500);
+    color: var(--white);
+    border: none;
+    border-radius: var(--spacing-xs); /* Más redondez para el botón */
+    /* Observación: El texto del botón es de 14px */
+    font-size: 14px; /* Ajuste directo a 14px */
+    font-weight: var(--font-weight-bold);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    max-width: 150px; /* Limita el ancho del botón */
+    /* Observación: El botón debe ir centrado debajo del formulario */
+    align-self: center; /* Centra el botón horizontalmente dentro de su contenedor flex (.contact-form) */
+}
+
+.submit-button:hover {
+    background-color: var(--secundary-600);
+}
+
+/* Map styles */
+.map-container {
+    width: 100%;
+    max-width: 450px; /* Limita el ancho del mapa en mobile */
+    height: 250px; /* Altura fija para el mapa en mobile */
+    border-radius: var(--spacing-xs); /* Más redondez para el mapa */
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Sombra más pronunciada para que sea visible */
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+/* Desktop styles */
+@media (min-width: 768px) {
+    /* La observación de 38px para 'Contáctanos' y 14px para 'Déjanos tus datos...' ya está aplicada directamente,
+       así que no es necesario modificar los valores 'var(--font-size-h2)' y 'var(--font-size-parrafo)'
+       en el media query si esos valores no coinciden con 38px y 14px respectivamente.
+       Si quieres usar las variables, asegúrate de que sus valores sean los correctos en variables.css.
+    */
+    .contact-title {
+        font-size: 38px; /* Confirmado para desktop también */
+    }
+
+    .contact-subtitle {
+        font-size: 14px; /* Confirmado para desktop también */
+    }
+
+    .contact-content {
+        flex-direction: row; /* Side-by-side on desktop */
+        justify-content: center;
+        align-items: flex-start;
+        gap: var(--spacing-xl);
+    }
+
+    .contact-form {
+        flex: 1;
+        max-width: 500px; /* Puedes ajustar este valor si el formulario es demasiado ancho o estrecho */
+    }
+
+    .form-group-inline {
+        flex-direction: row;
+        gap: var(--spacing-sm); /* Ajuste el gap entre 'Correo electrónico' y 'Teléfono' en desktop */
+    }
+
+    .map-container {
+        flex: 1;
+        height: 400px;
+        max-width: 550px; /* Puedes ajustar este valor si el mapa es demasiado ancho o estrecho */
+    }
+
+    .submit-button {
+        align-self: center; /* Mantiene el botón centrado también en desktop si está dentro del formulario */
+    }
+}
+
+/* Further adjustments for larger desktops */
+@media (min-width: 1024px) {
+    .contact-section {
+        padding: var(--spacing-3x1) var(--spacing-3x1); /* Ajusta estos valores para controlar las franjas blancas y laterales */
+                                                    /* Experimenta con spacing-xl, spacing-2xl, spacing-3xl */
+    }
+
+    .contact-title {
+        font-size: var(--font-size-h1); /* Larger H1 size for very large screens */
+    }
+
+    .contact-subtitle {
+        font-size: var(--font-size-p-welcome); /* Larger paragraph size */
+    }
+    
+    .contact-form {
+        max-width: 580px; /* Slightly wider form */
+    }
+
+    .map-container {
+        max-width: 600px; /* Slightly wider map */
+    }
+}
