@@ -1,0 +1,119 @@
+:root {
+  /*  Colores Primarios */
+  --primary-50: #F3F8FC;
+  --primary-100: #E6F0F8;
+  --primary-200: #C9E0F1;
+  --primary-300: #94C7E5;
+  --primary-400: #5BAAD5;
+  --primary-500: #3690C1;
+  --primary-600: #2673A3;
+  --primary-700: #215F88;
+  --primary-800: #1E4F6E;
+  --primary-900: #1E425C;
+  --primary-950: #142B3D;
+
+  /*  Colores Secundarios */
+--secondary-50: #EEFFF6;
+--secondary-100: #D7FFEC;
+--secondary-200: #B2FFDB;
+--secondary-300: #76FFC0;
+--secondary-400: #33F59D;
+--secondary-500: #09DE7D;
+--secondary-600: #00C16A;
+--secondary-700: #049152;
+--secondary-800: #0A5D3A;
+--secondary-900: #0A5D3A;
+--secondary-950: #00341E;
+
+  /* Colores Terciarios */
+  --terciario-50: #F1F9EC;
+  --terciario-100: #E4F4DB;
+  --terciario-200: #C2E6B0;
+  --terciario-300: #9CD581;
+  --terciario-400: #79C259;
+  --terciario-500: #5AA73B;
+  --terciario-600: #44852B;
+  --terciario-700: #366625;
+  --terciario-800: #2E5222;
+  --terciario-900: #294621;
+  --terciario-950: #12260D;
+
+
+    /* Basic color*/
+    --white: #fff;
+    --black: #000;
+    --gray-950: #101010;
+    --gray-900: #262626;
+    --gray-800: #3B3B3B;
+    --gray-700: #515151;
+    --gray-600: #676767;
+    --gray-500: #7D7D7D;
+    --gray-400: #929292;
+    --gray-300: #A8A8A8;
+    --gray-200: #BEBEBE;
+    --gray-100: #D4D4D4;
+    --gray-50: #E9E9E9;
+
+    /Icons/
+    --size-icon-header: 20px;
+    --size-icon-card: 60px;
+    --size-icon-section: 80px;
+    --size-icon-logo: 30px;
+    --size-icon-button: 24px;
+
+    /* Escala de espaciado general */
+    --spacing-xss: 4px;
+    --spacing-xs: 8px;
+    --spacing-sm: 12px;
+    --spacing-md: 16px;
+    --spacing-lg: 24px;
+    --spacing-xl: 32px;
+    --spacing-2x1: 48px;
+    --spacing-3x1: 64px;
+
+    /* Espaciado específico de componentes */
+    --button-padding-y: 16px; /* Padding vertical para botones */
+    --button-padding-x: 10px; /* Padding horizontal para botones */
+    --section-padding-y: 100px; /* Padding vertical para secciones */
+    --spacing-card-padding-y: 25px; /* Padding vertical para tarjetas */
+    --spacing-card-padding-x: 30px; /* Padding horizontal para tarjetas */
+
+    /* Fuentes base */
+    --font-family-base: 'Poppins', sans-serif; 
+
+    /* Tamaños de fuente generales */
+    --font-size-hero-title: 48px;
+    --font-size-subtitle: 24px;
+    --font-size-body: 16px;
+    --font-size-nav: 14px; 
+    --font-size-button: 14px;
+    --font-size-footer: 12px;
+
+    /* Tamaños de fuente para elementos HTML específicos o propósito */
+    --font-size-h1: 60px;
+    --font-size-h2: 36px;
+    --font-size-h4: 20px;
+    --font-size-h5: 14px; 
+    --font-size-p-welcome: 18px; 
+    --font-size-parrafo: 15px; 
+
+    /* Tamaños de fuente para elementos específicos de "shopping" */
+    --font-size-h1-shopping-products: 22px; /* Renombré de 'h1 shopping products' */
+    --font-size-discount-shopping: 16px; /* Renombré de 'descount_shopping' */
+    --font-size-discount-green: 18px;
+    --font-size-price-shopping-product: 36px; 
+
+    /* Pesos de fuente */
+    --font-weight-bold: 700;
+    --font-weight-medium: 500; /* Coincide con 'font-sive-nav' si era un peso de fuente */
+    --font-weight-regular: 400;
+
+    /* Altura de línea y espaciado de letras */
+    --line-height-default: 1.5; /* Representa 150%, que es 1.5 en CSS (sin unidad) */
+    --letter-spacing-tight: -0.5px; /* Se asume 'px' para espaciado de letras */
+
+    /tipografía logo/
+    --font-family-logo-base: 'Century', serif; /* Assuming Century is the primary font, with a generic serif fallback */
+    --font-weight-logo-bold: 700;
+
+}
